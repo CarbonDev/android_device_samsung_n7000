@@ -23,7 +23,6 @@ TARGET_BOARD_INFO_FILE := device/samsung/n7000/board-info.txt
 
 #Carbon Build Mods
 TARGET_GCC_VERSION := 4.6
-TARGET_USE_02 := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7000/bluetooth
