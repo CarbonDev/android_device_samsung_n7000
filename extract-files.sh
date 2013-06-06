@@ -32,8 +32,6 @@ for FILE in `cat proprietary-files.txt | grep -v ^# | grep -v ^$`; do
     adb pull /$FILE $DEVICEBASE/$FILE
 done
 
-
-
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__VENDOR__/$VENDOR/g > $DEVICEMAKEFILE
 # Copyright (C) 2012 The CyanogenMod Project
 #
@@ -49,12 +47,7 @@ done
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES := \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/system/lib/libril.so:obj/lib/libril.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/system/lib/libsecril-client.so:obj/lib/libsecril-client.so
-
-PRODUCT_COPY_FILES += \\
 EOF
 
 LINEEND=" \\"
