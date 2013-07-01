@@ -20,9 +20,6 @@ $(call inherit-product, vendor/carbon/config/common_gsm.mk)
 # Release name
 PRODUCT_RELEASE_NAME := GT-N7000
 
-# OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xhdpi
-
 # Inherit some common Carbon stuff.
 $(call inherit-product, vendor/carbon/config/common_phone.mk)
 
