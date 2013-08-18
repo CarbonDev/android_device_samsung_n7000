@@ -154,7 +154,8 @@
          config to 7. -->
     <integer name="config_deviceHardwareKeys">7</integer>
 
-    <!-- Boolean to enable stylus gestures -->
-    <bool name="config_stylusGestures">true</bool>
+    <!-- Boolean to enable stylus gestures 
+    Use <add-resource> for now, will look into getting the full commit-->
+    <add-resource type="bool" name="config_stylusGestures">true</add-resource>
 
 </resources>
