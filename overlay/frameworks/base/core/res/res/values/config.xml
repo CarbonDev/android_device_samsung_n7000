@@ -156,6 +156,6 @@
 
     <!-- Boolean to enable stylus gestures 
     Use <add-resource> for now, will look into getting the full commit-->
-    <add-resource type="bool" name="config_stylusGestures">true</add-resource>
+    <bool name="config_stylusGestures">true</bool>
 
 </resources>
