@@ -160,4 +160,7 @@
     <!-- Disable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 
+    <!-- Hide "Backlight" settings since not supported (timeout controlled by kernel) -->
+    <integer name="config_buttonBrightnessSettingDefault">0</integer>
+
 </resources>
